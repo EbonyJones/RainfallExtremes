@@ -1,0 +1,78 @@
+---
+title: "Quality Control"
+author: "Kate Saunders"
+date: "21 April 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Quality control issues within gauge data
+
+### Shifts in record
+In early 1908 the Bureau changed recording practices resulting in adjacent sites have records which can be different by +-1 day
+
+### Untagged accumulations
+These are multi-day accumulations that present as a single observation.
+Method for analysis include; 
+* Viney Bates 2004: who assume untagged accumulations occur on the Monday, when the gauge remains unread over the weekend
+* King 2014: for extremes, and examines which days of the week these observations occur.
+
+### Rounding errors
+Frequency of 0 mm and 5 mm observations too high, often related 
+to the under reporting/rounding of small rainfall amounts
+
+### Spurious zeroes
+Related to rounding errors are observers recording zero when there was in fact an observation
+
+### Station relocation
+Shifts in station location can change rainfall observations
+
+### Sheltering
+Erection of nearby buildings or tree growth that shelters the gauge.
+
+### Changes in instrumentation
+Change in recording instruments
+
+### Undercatch
+High winds resulting in rainfall being blow off the station and an underreporting of true amounts. Relevant for lighthouses, coastal regions with high winds and regions effected by tropical cyclones.
+
+### Heat island effect
+Errors associated with increased Summer rainfall which could be the result of "urbanisation". Therefore particular relevant trying to examine long term trends in big cities.
+
+#Approaches to identify erroreous data
+
+Laverey 1997 performed a series of statistical tests to check the quality of Australian rainfall. Some of these methods were outlined in Craddock 1981. Tests were done a year by year basis to test for inhomogeneities.
+
+### Observer practices
+If an observer rarely missed days/was consistent in their pattern of behaviour, it is assumed that the quality of the gauge record can be trusted. This can be determined through the station records (have a link to this: http://www.bom.gov.au/climate/data-services/about-data-observations.shtml#tabs=Networks-and-data
+)
+
+### Nearest neighbour approaches
+Within densely gauged areas such as South East Queensland, to verify neighbouring rainfall we can use a nearest neighbour approach to compare records. 
+
+* Possible points of comparison include congruence statistics.
+* Frequency plots (quantile matching)
+* Compare average annual/total rainfall at nearby stations
+
+### Rounding errors
+People can round up or round down. A way to identify this is to look at the frequency of say 8,9 vs 10,11.
+
+### Transform
+Stidd 1953 suggested a cube root transform results in data that is approximately normal, then you can use this to calculate a correlation coefficient to determine station record quality. The threshold value of the r correlation coefficient was set by examing a few gauges to see what works - could do this better.
+(Probably better ways to do this, eg box-cox, but if the station is going to fail it might still serve a purpose).
+
+### Untagged accumulations
+Methods:
+
+
+* Viney and Bates 2004; assumed untagged accumulations would primarily occur on a weekend.
+* Analysis of untagged accumulations amongst extremes King 2013, checked whether the extremes occured uniformly across days of the week. Stations were rejected if a one day had very low frequency and the following day have very high frequency of extremes
+
+
+
+
+
+

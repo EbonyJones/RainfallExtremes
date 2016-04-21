@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Quality control issues within gauge data
+# Quality control issues within station data
 
 ### Shifts in record
 In early 1908 the Bureau changed recording practices resulting in adjacent sites have records which can be different by +-1 day

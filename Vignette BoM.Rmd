@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This vignette is designed to outline mehods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
+This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
 # Outline:
 
 ### Installation
@@ -49,6 +49,9 @@ Currently available through the GHDN dataset are 16420 unique station names. The
 
 * what types of data are availabe, PRCP TMAX etc
 * where it is available - visualise the locations of available data (temp, rainfall) Kate's got code to do that in leaflet
+
+Note that in some circumstances it is suspected there is some descrepancy within the GHDN station network as compared with raw BoM station data available through the Weather Station Directory (http://www.bom.gov.au/climate/data/stations/). These  different homogenisation processes and different quality controls.
+
 * ANDREW - can also search for metadata directly from the bureau of meteorology portal using the following function, this data can be downloaded from the api
 
 #### How to get the data:

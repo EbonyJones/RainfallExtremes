@@ -116,7 +116,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>This vignette is designed to outline mehods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (<a href="https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn" class="uri">https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn</a>) . # Outline:</p>
+<p>This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (<a href="https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn" class="uri">https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn</a>) . # Outline:</p>
 <div id="installation" class="section level3">
 <h3>Installation</h3>
 <p>As some of the needed functionality is still in active development and the rnoaa package needs to be downloaded directly from github instead of Cran.</p>
@@ -147,6 +147,9 @@ library(rnoaa)</code></pre>
 <ul>
 <li>what types of data are availabe, PRCP TMAX etc</li>
 <li>where it is available - visualise the locations of available data (temp, rainfall) Kate’s got code to do that in leaflet</li>
+</ul>
+<p>Note that there is some descrepancy within the GHDN station network as compared with raw BoM station data available through the Weather Station Directory (<a href="http://www.bom.gov.au/climate/data/stations/" class="uri">http://www.bom.gov.au/climate/data/stations/</a>).</p>
+<ul>
 <li>ANDREW - can also search for metadata directly from the bureau of meteorology portal using the following function, this data can be downloaded from the api</li>
 </ul>
 <div id="how-to-get-the-data" class="section level4">

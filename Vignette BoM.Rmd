@@ -10,19 +10,48 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
-Note: some of the needed functionality is still in development and needs to be downloaded directly from github, details will be provided below.
-
 # Outline:
 
-#### How to install the rnoaa stuff (from github)
+### Installation
 
-* packages needed
-* version 
- 
-#### What data is available:
+As some of the needed functionality is still in active development and the rnoaa package needs to be downloaded directly from github instead of Cran.
+
+```{r, echo = T, eval = F}
+# devtools::install_github("rOpenScieLabs/rnoaa")
+devtools::install_github("hrbrmstr/rnoaa")
+library(rnoaa)
+```
+
+### What station data is available?
+
+Currently available through the GHDN dataset are 16420 unique station names. The data types availabe for these stations are:
+
+<!-- ```{r, echo = T} -->
+<!-- unique(oz_stations$element) -->
+
+<!-- Data type | Description -->
+<!-- ------------- | ------------- -->
+<!-- PRCP | Stuff -->
+<!-- DAPR | Stuff  -->
+<!-- DWPR | Stuff  -->
+<!-- MDPR | Stuff -->
+<!-- TMAX | Stuff -->
+<!-- TMIN | Stuff -->
+<!-- DATX | Stuff -->
+<!-- MDTX | Stuff -->
+<!-- DATN | Stuff -->
+<!-- MDTN | Stuff -->
+<!-- TAVG | Stuff -->
+<!-- SNWD | Stuff -->
+
+<!-- ``` -->
+
 
 * what types of data are availabe, PRCP TMAX etc
 * where it is available - visualise the locations of available data (temp, rainfall) Kate's got code to do that in leaflet
+
+Note that in some circumstances it is suspected there is some descrepancy within the GHDN station network as compared with raw BoM station data available through the Weather Station Directory (http://www.bom.gov.au/climate/data/stations/). These  different homogenisation processes and different quality controls.
+
 * ANDREW - can also search for metadata directly from the bureau of meteorology portal using the following function, this data can be downloaded from the api
 
 #### How to get the data:
@@ -40,5 +69,3 @@ Note: some of the needed functionality is still in development and needs to be d
 * write about AWAP code from Ivan
 * write about masking
 * write about catchments
-
-

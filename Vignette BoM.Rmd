@@ -9,23 +9,43 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
-
+This vignette is designed to outline mehods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
 # Outline:
 
-## Installation
+### Installation
+
 As some of the needed functionality is still in active development and the rnoaa package needs to be downloaded directly from github instead of Cran.
 
-```{r, echo = T}
+```{r, echo = T, eval = F}
+# devtools::install_github("rOpenScieLabs/rnoaa")
 devtools::install_github("hrbrmstr/rnoaa")
+library(rnoaa)
 ```
 
-The dependencies needed for this package are:
-```{r, echo = T}
-# Stuff here
-```
- 
-#### What data is available:
+### What station data is available?
+
+Currently available through the GHDN dataset are 16420 unique station names. The data types availabe for these stations are:
+
+<!-- ```{r, echo = T} -->
+<!-- unique(oz_stations$element) -->
+
+<!-- Data type | Description -->
+<!-- ------------- | ------------- -->
+<!-- PRCP | Stuff -->
+<!-- DAPR | Stuff  -->
+<!-- DWPR | Stuff  -->
+<!-- MDPR | Stuff -->
+<!-- TMAX | Stuff -->
+<!-- TMIN | Stuff -->
+<!-- DATX | Stuff -->
+<!-- MDTX | Stuff -->
+<!-- DATN | Stuff -->
+<!-- MDTN | Stuff -->
+<!-- TAVG | Stuff -->
+<!-- SNWD | Stuff -->
+
+<!-- ``` -->
+
 
 * what types of data are availabe, PRCP TMAX etc
 * where it is available - visualise the locations of available data (temp, rainfall) Kate's got code to do that in leaflet
@@ -46,5 +66,3 @@ The dependencies needed for this package are:
 * write about AWAP code from Ivan
 * write about masking
 * write about catchments
-
-

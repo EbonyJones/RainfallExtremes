@@ -116,25 +116,39 @@ $(document).ready(function () {
 </div>
 
 
-<p>This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (<a href="https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn" class="uri">https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn</a>) .</p>
-<div id="outline" class="section level1">
-<h1>Outline:</h1>
-<div id="installation" class="section level2">
-<h2>Installation</h2>
+<p>This vignette is designed to outline mehods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (<a href="https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn" class="uri">https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn</a>) . # Outline:</p>
+<div id="installation" class="section level3">
+<h3>Installation</h3>
 <p>As some of the needed functionality is still in active development and the rnoaa package needs to be downloaded directly from github instead of Cran.</p>
-<pre class="r"><code>devtools::install_github(&quot;hrbrmstr/rnoaa&quot;)</code></pre>
-<pre><code>## Skipping install for github remote, the SHA1 (756415b3) has not changed since last install.
-##   Use `force = TRUE` to force installation</code></pre>
-<p>The dependencies needed for this package are:</p>
-<pre class="r"><code># Stuff here</code></pre>
-<div id="what-data-is-available" class="section level4">
-<h4>What data is available:</h4>
+<pre class="r"><code># devtools::install_github(&quot;rOpenScieLabs/rnoaa&quot;)
+devtools::install_github(&quot;hrbrmstr/rnoaa&quot;)
+library(rnoaa)</code></pre>
+</div>
+<div id="what-station-data-is-available" class="section level3">
+<h3>What station data is available?</h3>
+<p>Currently available through the GHDN dataset are 16420 unique station names. The data types availabe for these stations are:</p>
+<!-- ```{r, echo = T} -->
+<!-- unique(oz_stations$element) -->
+<!-- Data type | Description -->
+<!-- ------------- | ------------- -->
+<!-- PRCP | Stuff -->
+<!-- DAPR | Stuff  -->
+<!-- DWPR | Stuff  -->
+<!-- MDPR | Stuff -->
+<!-- TMAX | Stuff -->
+<!-- TMIN | Stuff -->
+<!-- DATX | Stuff -->
+<!-- MDTX | Stuff -->
+<!-- DATN | Stuff -->
+<!-- MDTN | Stuff -->
+<!-- TAVG | Stuff -->
+<!-- SNWD | Stuff -->
+<!-- ``` -->
 <ul>
 <li>what types of data are availabe, PRCP TMAX etc</li>
 <li>where it is available - visualise the locations of available data (temp, rainfall) Kate’s got code to do that in leaflet</li>
 <li>ANDREW - can also search for metadata directly from the bureau of meteorology portal using the following function, this data can be downloaded from the api</li>
 </ul>
-</div>
 <div id="how-to-get-the-data" class="section level4">
 <h4>How to get the data:</h4>
 <ul>
@@ -161,7 +175,6 @@ $(document).ready(function () {
 <li>write about masking</li>
 <li>write about catchments</li>
 </ul>
-</div>
 </div>
 </div>
 

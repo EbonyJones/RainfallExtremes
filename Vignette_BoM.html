@@ -116,16 +116,17 @@ $(document).ready(function () {
 </div>
 
 
-<p>This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (<a href="https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn" class="uri">https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn</a>) . Note: some of the needed functionality is still in development and needs to be downloaded directly from github, details will be provided below.</p>
+<p>This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (<a href="https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn" class="uri">https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn</a>) .</p>
 <div id="outline" class="section level1">
 <h1>Outline:</h1>
-<div id="how-to-install-the-rnoaa-stuff-from-github" class="section level4">
-<h4>How to install the rnoaa stuff (from github)</h4>
-<ul>
-<li>packages needed</li>
-<li>version</li>
-</ul>
-</div>
+<div id="installation" class="section level2">
+<h2>Installation</h2>
+<p>As some of the needed functionality is still in active development and the rnoaa package needs to be downloaded directly from github instead of Cran.</p>
+<pre class="r"><code>devtools::install_github(&quot;hrbrmstr/rnoaa&quot;)</code></pre>
+<pre><code>## Skipping install for github remote, the SHA1 (756415b3) has not changed since last install.
+##   Use `force = TRUE` to force installation</code></pre>
+<p>The dependencies needed for this package are:</p>
+<pre class="r"><code># Stuff here</code></pre>
 <div id="what-data-is-available" class="section level4">
 <h4>What data is available:</h4>
 <ul>
@@ -149,6 +150,7 @@ $(document).ready(function () {
 </div>
 <div id="add-some-notes-about-differences-quality" class="section level4">
 <h4>Add some notes about differences /quality</h4>
+</div>
 </div>
 <div id="create-a-new-section-about-awap-data" class="section level2">
 <h2>Create a new section about AWAP data</h2>

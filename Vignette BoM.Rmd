@@ -10,14 +10,20 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
-Note: some of the needed functionality is still in development and needs to be downloaded directly from github, details will be provided below.
 
 # Outline:
 
-#### How to install the rnoaa stuff (from github)
+## Installation
+As some of the needed functionality is still in active development and the rnoaa package needs to be downloaded directly from github instead of Cran.
 
-* packages needed
-* version 
+```{r, echo = T}
+devtools::install_github("hrbrmstr/rnoaa")
+```
+
+The dependencies needed for this package are:
+```{r, echo = T}
+# Stuff here
+```
  
 #### What data is available:
 

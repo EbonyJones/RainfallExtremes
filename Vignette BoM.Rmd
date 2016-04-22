@@ -9,22 +9,36 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+This vignette is designed to outline methods for accessing Bureau of Meteorology station data and the Australian Water Availability Project (AWAP) gridded datasets. The rnoaa package has Australian station data from the Global Historical Climatology Network (GHNC), for details see (https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn) .
+Note: some of the needed functionality is still in development and needs to be downloaded directly from github, details will be provided below.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Outline:
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+#### How to install the rnoaa stuff (from github)
 
-```{r cars}
-summary(cars)
-```
+* packages needed
+* version 
+ 
+#### What data is available:
 
-## Including Plots
+* what types of data are availabe, PRCP TMAX etc
+* where it is available - visualise the locations of available data (temp, rainfall) Kate's got code to do that in leaflet
+* ANDREW - can also search for metadata directly from the bureau of meteorology portal using the following function, this data can be downloaded from the api
 
-You can also embed plots, for example:
+#### How to get the data:
+* how to search for a location (radius search)
+* date range
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+#### How to read the data 
+* give a plotted example  (rain/temp)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+#### Add some notes about differences /quality
+
+## Create a new section about AWAP data
+
+#### FOR ADAM
+* write about AWAP code from Ivan
+* write about masking
+* write about catchments
+
+
